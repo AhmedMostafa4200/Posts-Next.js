@@ -12,10 +12,10 @@ export default function Post({ post }) {
       </Head>
       <div className="flex flex-col gap-y-2">
         <h3 className="text-lg leading-5 text-gray-900 font-semibold">
-          {post.text}
+          {post?.text}
         </h3>
         <div>
-          <img className="w-96 object-cover" src={post.image} loading="lazy" />
+          <img className="w-96 object-cover" src={post?.image} loading="lazy" />
           {/* <Image
             src={post.image}
             height={500}
@@ -25,7 +25,7 @@ export default function Post({ post }) {
           /> */}
         </div>
         <ul className="flex flex-wrap gap-1">
-          {post.tags.map((tag) => (
+          {post?.tags?.map((tag) => (
             <li key={tag} className="text-sm text-gray-500 font-medium">
               {tag}
             </li>
