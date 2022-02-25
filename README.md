@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Notes
+
+I used SSR for Posts pages and Statis generation for Post page
+I used client side rendering for pagination in posts page (to add more posts without rendering the page)
+i.e: it's hyprid system
+
 ## Getting Started
 
 First, run the development server:
